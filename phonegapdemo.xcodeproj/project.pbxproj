@@ -38,6 +38,7 @@
 		D682AB701537A5AB007A1C18 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D682AB6F1537A5AB007A1C18 /* MainViewController.m */; };
 		D682AB721537A5AB007A1C18 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D682AB711537A5AB007A1C18 /* MainViewController.xib */; };
 		D682AB761537A5AB007A1C18 /* verify.sh in Resources */ = {isa = PBXBuildFile; fileRef = D682AB751537A5AB007A1C18 /* verify.sh */; };
+		D682AB7D1537A64F007A1C18 /* www in Resources */ = {isa = PBXBuildFile; fileRef = D682AB7C1537A64F007A1C18 /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,10 +56,10 @@
 		D682AB381537A5AA007A1C18 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D682AB3A1537A5AA007A1C18 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		D682AB3C1537A5AA007A1C18 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		D682AB401537A5AA007A1C18 /* phonegapdemo-Info.plist */ = {isa = PBXFileReference; path = "phonegapdemo-Info.plist"; sourceTree = "<group>"; };
+		D682AB401537A5AA007A1C18 /* phonegapdemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "phonegapdemo-Info.plist"; sourceTree = "<group>"; };
 		D682AB421537A5AA007A1C18 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D682AB441537A5AA007A1C18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D682AB461537A5AA007A1C18 /* phonegapdemo-Prefix.pch */ = {isa = PBXFileReference; path = "phonegapdemo-Prefix.pch"; sourceTree = "<group>"; };
+		D682AB461537A5AA007A1C18 /* phonegapdemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "phonegapdemo-Prefix.pch"; sourceTree = "<group>"; };
 		D682AB471537A5AA007A1C18 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = /Users/Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<absolute>"; };
 		D682AB4C1537A5AA007A1C18 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D682AB501537A5AA007A1C18 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -71,13 +72,14 @@
 		D682AB641537A5AA007A1C18 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/splash/Default@2x.png"; sourceTree = "<group>"; };
 		D682AB661537A5AB007A1C18 /* Capture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Capture.bundle; path = Resources/Capture.bundle; sourceTree = "<group>"; };
 		D682AB681537A5AB007A1C18 /* Cordova.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cordova.plist; sourceTree = "<group>"; };
-		D682AB6B1537A5AB007A1C18 /* AppDelegate.h */ = {isa = PBXFileReference; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		D682AB6B1537A5AB007A1C18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		D682AB6C1537A5AB007A1C18 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		D682AB6E1537A5AB007A1C18 /* MainViewController.h */ = {isa = PBXFileReference; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
+		D682AB6E1537A5AB007A1C18 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
 		D682AB6F1537A5AB007A1C18 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
 		D682AB711537A5AB007A1C18 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
-		D682AB741537A5AB007A1C18 /* README */ = {isa = PBXFileReference; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		D682AB741537A5AB007A1C18 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
 		D682AB751537A5AB007A1C18 /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
+		D682AB7C1537A64F007A1C18 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 		D682AB3E1537A5AA007A1C18 /* phonegapdemo */ = {
 			isa = PBXGroup;
 			children = (
+				D682AB7C1537A64F007A1C18 /* www */,
 				D682AB471537A5AA007A1C18 /* Cordova.framework */,
 				D682AB491537A5AA007A1C18 /* Resources */,
 				D682AB6A1537A5AB007A1C18 /* Classes */,
@@ -329,6 +332,7 @@
 				D682AB691537A5AB007A1C18 /* Cordova.plist in Resources */,
 				D682AB721537A5AB007A1C18 /* MainViewController.xib in Resources */,
 				D682AB761537A5AB007A1C18 /* verify.sh in Resources */,
+				D682AB7D1537A64F007A1C18 /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +546,7 @@
 				D682AB7B1537A5AB007A1C18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
