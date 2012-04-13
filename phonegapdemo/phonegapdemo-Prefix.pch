@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'phonegapdemo' target in the 'phonegapdemo' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
