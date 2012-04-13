@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      
+      <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no">
+          <meta charset="UTF-8">
+              <style type="text/css">
+                  html, body, #map_canvas {
+                      margin: 0;
+                      padding: 0;
+                      height: 80%;
+                  }
+                  </style>
+      <script type="text/javascript" charset="utf-8" src="cordova-1.6.0.js"></script>
+      <script type="text/javascript" charset="utf-8" src="jquery.js"></script>
+      <script type="text/javascript"
+          src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+      <script type="text/javascript">
+          function init()
+          {
+              document.addEventListener("deviceready", onDeviceReady, false);
+          }
+          
+          var watchId = null;
+          
+          function onDeviceReady()
+          {
+              alert("Hello");
+              var options = { frequency:3000 };
+              watchId = navigator.geolocation.getCurrentPosition(initialize, onFailure, options);
+              
+          }
+          
+          function onFailure(error)
+          {
+              alert('code: '    + error.code    + '\n' +
+                    'message: ' + error.message + '\n');
+
+          }
+          
+          var map;
+          var geocoder;
+          function initialize(position) {
+              geocoder = new google.maps.Geocoder();
+              var myOptions = {
+                  zoom: 8,
+                  center: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+              };
+              map = new google.maps.Map(document.getElementById('map_canvas'),
+                                        myOptions);
+          }
+          
+          google.maps.event.addDomListener(window, 'load', initialize);
+
+          $(document).ready(function(){
+                $("#click").live("click",function(){
+                        codeAddress($("#val").val());
+                });
+            });
+          
+          function codeAddress(value) {
+              var address = value;
+              geocoder.geocode( { 'address': address}, function(results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                        map.setCenter(results[0].geometry.location);
+                        var marker = new google.maps.Marker({
+                                                map: map, 
+                                                position: results[0].geometry.location
+                                                            });
+                } else {
+                    alert("Geocode was not successful for the following reason: " + status);
+                }
+            });
+          }
+
+          </script>
+  </head>
+  <title></title>
+  <body onload="init();">
+    <div id="map_canvas"></div>
+    <input type="text" name="test" id="val"/>
+    <br/>
+    <input type="button" value="click me!" id="click"/>
+    <p id="text"></p>
+  </body>
+</html>
